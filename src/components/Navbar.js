@@ -7,6 +7,10 @@ import '../styles/Navbar.css';
 export const Navbar = () => {
     const [openLinks, setOpenLinks] = useState(false);
 
+    const toggleNavbar = () => {
+        setOpenLinks(!openLinks);
+    }
+
   return (
     <div className='navbar'>
         <div className='leftSide' id={openLinks ? 'open' : 'close'}>
@@ -23,7 +27,7 @@ export const Navbar = () => {
             <Link to='/menu'> Menu </Link>
             <Link to='/about'> About </Link>
             <Link to='/contact'> Contact </Link>
-            <button>
+            <button onClick={toggleNavbar}>
                 <ReorderIcon/>
             </button>
         </div>
