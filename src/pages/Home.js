@@ -5,10 +5,10 @@ import '../styles/Home.css';
 
 function Home() {
   return (
-    <div className='home'>
-        <div className='headerContainer' style={{backgroundImage: `url(${BannerImage})`}}>
+    <div className='home' style={{backgroundImage: `url(${BannerImage})`}}>
+        <div className='headerContainer'>
             <h1> Paaks Pizzeria </h1>
-            <p> PIZZA MORE ENJOYABLE THAN SEX </p>
+            <p> MORE ENJOYABLE THAN SEX </p>
             <Link to='/menu'>
                 <button> ORDER NOW </button>
             </Link>
